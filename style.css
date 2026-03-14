@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background-color: black;
+  color: white;
+}
+.seperation {
+  border: 3px solid rgb(54, 54, 54);
+}
+.banner {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/rDJegQJaCyGaYysj2g5XWY.jpg);
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 644px;
+  background-position: center center;
+  position: relative;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+  margin: auto;
+  height: 100px;
+}
+.header img {
+  width: 130px;
+  cursor: pointer;
+}
+.btn {
+  padding: 3px 8px;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  border: 1px solid white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.6s;
+}
+.btn-red {
+  background-color: red;
+}
+.box {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  height: calc(100% - 100px);
+  gap: 25px;
+}
+.box-title {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+.box-p1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bolder;
+}
+.box-p2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+#mail-button:hover {
+  background-color: black;
+}
+.hero form {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+}
+.hero input {
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+.hero button {
+  padding: 8px 24px;
+  font-size: 18px;
+}
+
+.info-area {
+  display: flex;
+  width: 70vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.info-img {
+  position: relative;
+}
+.info-img img {
+  position: relative;
+  width: 555px;
+  z-index: 10;
+}
+.info-img video {
+  position: absolute;
+  top: 80px;
+  right: 60px;
+}
+.info-area h1 {
+  font-size: 40px;
+
+  font-weight: bolder;
+}
+.info-area p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* responsive */
+@media (max-width: 1000px) {
+  .info-area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .info-area h1 {
+    margin: 20px auto;
+  }
+  .info-area p {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .info-area {
+    text-align: center;
+  }
+  .info-area h1 {
+    font-size: 40px;
+    margin-top: 40px;
+  }
+  .info-area p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .info-img {
+    position: relative;
+    width: 100%;
+  }
+  .info-img img {
+    width: 100%;
+    height: auto;
+  }
+  .info-img video {
+    position: absolute;
+    width: 83%;
+    top: 40px;
+    left: 35px;
+    object-fit: cover;
+  }
+}
+.sss {
+  width: 70vw;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+.sss h1 {
+  font-size: 50px;
+  margin: 30px 0px;
+}
+.sss-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(41, 41, 41);
+  margin: 37px auto;
+  padding: 25px 25px;
+  border-radius: 3px;
+  transition: all 0.6s;
+  cursor: pointer;
+  max-width: 60vw;
+}
+.sss-box span {
+  font-size: 20px;
+}
+.sss-box:hover {
+  background-color: rgb(22, 22, 22);
+}
+.footer {
+  max-width: 60vw;
+  margin: auto;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.footer-container {
+  display: flex;
+
+  gap: 100px;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-box a {
+  color: white;
+  font-size: 18px;
+}
+@media (max-width: 800px) {
+  .footer {
+    max-width: 90vw;
+  }
+
+  .footer-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .footer-box a {
+    font-size: 14px;
+  }
+}
